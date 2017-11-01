@@ -1,3 +1,18 @@
-
-
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1><%=@team.team_name%></h1>
+    <h2>Team Motto: <%=@team.team_motto%></h2>
+    <% @members.each do |member| %>
+      <div>
+        <h2>Hero Name: <%= member.name%></h2>
+        <p>Hero Power: <%= member.power%></p>
+        <p>Hero Biography: <%= member.biography%></p>
+      </div>
+      <%end%>
+  </body>
+</html>
