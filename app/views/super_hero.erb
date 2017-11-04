@@ -1,1 +1,40 @@
-
+<h1>Create a Team and Heroes!</h1>
+<form action='/teams' method='POST'>
+  <label>Team Name
+    <input type="text" name=team[name] >
+  </label>
+  <label>Team Motto
+    <input type="text" name=team[motto] >
+  </label>
+<h1>Hero 1</h1>
+  <label>Hero Name
+    <input type="text" name=members[]name >
+  </label>
+  <label>Hero Power
+    <input type="text" name=members[]power >
+  </label>
+  <label>Hero Bio
+    <input type="text" name=members[]bio >
+  </label>
+<h1>Hero 2</h1>
+  <label>Hero Name
+    <input type="text" name=members[]name >
+  </label>
+  <label>Hero Power
+    <input type="text" name=members[]power >
+  </label>
+  <label>Hero Bio
+    <input type="text" name=members[]bio >
+  </label>
+<h1>Hero 3</h1>
+  <label>Hero Name
+    <input type="text" name=members[]name >
+  </label>
+  <label>Hero Power
+    <input type="text" name=members[]power >
+  </label>
+  <label>Hero Bio
+    <input type="text" name=members[]bio >
+  </label>
+  <input type="submit" name="submit" value="submit">
+</form>
